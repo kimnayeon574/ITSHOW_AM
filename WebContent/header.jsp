@@ -103,6 +103,9 @@ li{list-style:none;}
 	text-align: center;
 }
 
+#logout{
+	display: none;
+}
 .exhibition:hover #exhibitionServe, .museum:hover #museumServe, .artgallery:hover #artgalleryServe, .artist:hover #artistServe{display: block;}
 
 </style>
@@ -111,8 +114,9 @@ li{list-style:none;}
 	<div id="head">
 		<div id="headTop">
 			<ul class="topMenu">
-				<li><a title="로그인" href=""><em>로그인</em></a></li>
-				<li><a title="회원가입" href=""><em>회원가입</em></a></li>
+				<li id="login"><a title="로그인" href="login.jsp"><em>로그인</em></a></li>
+				<li id="logout"><a title="로그아웃" href="logout.jsp"><em>로그아웃</em></a></li>
+				<li><a title="회원가입" href="join.jsp"><em>회원가입</em></a></li>
 				<li><a title="마이페이지" href=""><em>마이페이지</em></a></li>
 				<li><a title="고객센터" href=""><em>고객센터</em></a></li>
 			</ul>
