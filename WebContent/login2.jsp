@@ -13,7 +13,7 @@
         Statement statement;
         ResultSet resultSet;
         
-        String driver = "com.mysql.cj.jdbc.Driver";
+        String driver = "com.mysql.jdbc.Driver";
         String url = "jdbc:mysql://10.96.123.45:3307/am_db?characterEncoding=UTF-8&serverTimezone=UTC";
         String uid = "am";
         String upw = "1234";
