@@ -1,7 +1,7 @@
 # ITSHOW_AM
 
 2019 IT SHOW <b>오늘의 전시회</b> <br>
-https://github.com/kimnayeon574/ITSHOW_AM <br><br>
+https://github.com/kimnayeon574/ITSHOW_AM <br>
 
 장소 : 서울특별시 관악구 호암로 546 미림여자정보과학고등학교 <br>
 일시 : 2019.06.27 ~ 2019.06.29
