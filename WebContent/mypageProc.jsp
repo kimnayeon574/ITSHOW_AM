@@ -74,48 +74,48 @@ border-top: 1px solid gray;
 		<div class = "d1" >
 			<img src="image/mypage.jpg" width="150px" height="150px" style=" margin:30px;">
 			<h1 class = "h1">Kim nayeon</h1>
-			<div class = "d2"><a href=#"">È¸¿øÁ¤º¸¼öÁ¤</a></div>
-			<div class = "d3"> <a href=#"">³ªÀÇ °ü½É Àü½ÃÈ¸</a></div>
+			<div class = "d2"><a href=#"">íšŒì›ì •ë³´ìˆ˜ì •</a></div>
+			<div class = "d3"> <a href=#"">ë‚˜ì˜ ê´€ì‹¬ ì „ì‹œíšŒ</a></div>
 			<table class = "table1">
 			<tr><td class ="td1"><h1>1</h1><br>
-				¿¹¸Þ³»¿ª</td>
+				ì˜ˆë©”ë‚´ì—­</td>
 				<td class ="td1"><h1>1</h1><br>
-				°ü¶÷ Àü½ÃÈ¸</td>
+				ê´€ëžŒ ì „ì‹œíšŒ</td>
 				<td class ="td1"><h1>0</h1><br>
-				³ªÀÇ ÈÄ±â</td>
+				ë‚˜ì˜ í›„ê¸°</td>
 			</table>
 		</div>
 		
 		<div class = "d4">
-		<caption><h2>ÃÖ±Ù ¿¹¸Å/Ãë¼Ò</h2></caption>
+		<caption><h2>ìµœê·¼ ì˜ˆë§¤/ì·¨ì†Œ</h2></caption>
 			<table class = "table2" >
 			<tr>
 			<br>
-			<th width="200px">¿¹¸ÅÀÏ</th>
-			<th width="600px" colspan="2">Àü½ÃÁ¤º¸</th>
-			<th width="250px">¿¹¸ÅÁ¤º¸</th>
-			<th width="150px">»óÅÂ</th>
+			<th width="200px">ì˜ˆë§¤ì¼</th>
+			<th width="600px" colspan="2">ì „ì‹œì •ë³´</th>
+			<th width="250px">ì˜ˆë§¤ì •ë³´</th>
+			<th width="150px">ìƒíƒœ</th>
 			</tr>
 			<tr >
 			<td align = "center">2019.05.15</td>
 			<td width = "300px"><img src = "image/image07.jpg" width = "200px"  height = "300px">	
 			</td>
 			<td width = "300px">
-			<h2>½´°¡ÇÃ·¹´Ö</h2>
+			<h2>ìŠˆê°€í”Œë ˆë‹›</h2>
 			<br>
 			<br>
-			<p>¼­¿ï½£°¶·¯¸®¾ÆÆ÷·¹</p>
+			<p>ì„œìš¸ìˆ²ê°¤ëŸ¬ë¦¬ì•„í¬ë ˆ</p>
 			<p>2018.10.18 ~ 2019.04.28</p>
-			<p>Àü½ÃÈ¸</p>
+			<p>ì „ì‹œíšŒ</p>
 			</td>
 			<td >
-			<p>¿¹¾à¹øÈ£ : M1432701210</p>
-			<p>°ü¶÷ÀÏ : 2019.04.28</p>
-			<p>¸Å¼ö : 1</p>
-			<p>Ãë¼Ò °¡´ÉÀÏ : 2019.04.25</p>
+			<p>ì˜ˆì•½ë²ˆí˜¸ : M1432701210</p>
+			<p>ê´€ëžŒì¼ : 2019.04.28</p>
+			<p>ë§¤ìˆ˜ : 1</p>
+			<p>ì·¨ì†Œ ê°€ëŠ¥ì¼ : 2019.04.25</p>
 			</td>
 			<td>
-			<h2>¿¹¸Å¿Ï·á</h2>
+			<h2>ì˜ˆë§¤ì™„ë£Œ</h2>
 			</td>
 			</tr>
 			</table>
