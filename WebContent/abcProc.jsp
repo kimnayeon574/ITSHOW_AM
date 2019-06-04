@@ -1,6 +1,31 @@
+<%@page import="user.ExhibitionDTO"%>
+<%@page import="java.util.List"%>
+<%@page import="user.ExhibitionDAO"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.sql.*"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+  <%!
+        Connection connection = null;
+        Statement statement;
+        ResultSet resultSet;
+        
+        String driver = "com.mysql.cj.jdbc.Driver";
+        String url = "jdbc:mysql://10.96.123.45:3307/am_db?characterEncoding=UTF-8&serverTimezone=UTC";
+        String uid = "am";
+        String upw = "1234";
+        String query = "select * from member";
+
+		SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DD HH:mm");
+		ExhibitionDAO exhibition = ExhibitionDAO.getInstance();
+		
+		List<ExhibitionDTO> list = exhibition.getList();
+		ExhibitionDTO data = new ExhibitionDTO();
+
+%>
+
 <html>
 <head>
 <meta charset="UTF-8">
@@ -125,6 +150,7 @@
 </style>
 </head>
 <body>
+
 <div id="header">
 	<jsp:include page="header.jsp" />
 </div>
@@ -166,99 +192,21 @@
             </li>
         </ul>
     </div>
+    <%
+    	 for(int i=0; i<list.size(); i++) {
+    		data = list.get(i);
+    	} 
+    %>
 	<br><br><hr id="titleHr"><br><br>
 	<div class="box1">
 		<ul>
 			<li><img src="image/image07.jpg"></li>
-			<li> <h4><span> 스타일은 영원하다. </span></h2></li>
-			<hr class="hr1">
-			<li> 장소 : 부산시민회관</li>
-			<li> 분야 : 전시회</li>
-			<li> 날짜 : 2019.02.15 ~ 2019.04.30</li>
-		</ul>
-		<ul>
-			<li><img src="image/image07.jpg"></li>
-			<li> <h4><span> 죽고싶지만 떡볶이는 먹고싶어 </span></h2></li>
-			<hr class="hr1">
-			<li> 장소 : 부산시민회관</li>
-			<li> 분야 : 전시회</li>
-			<li> 날짜 : 2019.02.15 ~ 2019.04.30</li>
-		</ul>
-		
-		<ul>
-			<li><img src="image/image07.jpg"></li>
-			<li> <h4><span> 스타일은 영원하다. </span></h2></li>
-			<hr class="hr1">
-			<li> 장소 : 부산시민회관</li>
-			<li> 분야 : 전시회</li>
-			<li> 날짜 : 2019.02.15 ~ 2019.04.30</li>
-		</ul>
-		
-		<ul>
-			<li><img src="image/image07.jpg"></li>
-			<li> <h4><span> 스타일은 영원하다. </span></h2></li>
-			<hr class="hr1">
-			<li> 장소 : 부산시민회관</li>
-			<li> 분야 : 전시회</li>
-			<li> 날짜 : 2019.02.15 ~ 2019.04.30</li>
-		</ul>
-		
-		<ul>
-			<li><img src="image/image07.jpg"></li>
-			<li> <h4><span> 스타일은 영원하다. </span></h2></li>
-			<hr class="hr1">
-			<li> 장소 : 부산시민회관</li>
-			<li> 분야 : 전시회</li>
-			<li> 날짜 : 2019.02.15 ~ 2019.04.30</li>
-		</ul>
-		
-		<ul>
-			<li><img src="image/image07.jpg"></li>
-			<li> <h4><span> 스타일은 영원하다. </span></h2></li>
-			<hr class="hr1">
-			<li> 장소 : 부산시민회관</li>
-			<li> 분야 : 전시회</li>
-			<li> 날짜 : 2019.02.15 ~ 2019.04.30</li>
-		</ul>
-		
-		<ul>
-			<li><img src="image/image07.jpg"></li>
-			<li> <h4><span> 스타일은 영원하다. </span></h2></li>
-			<hr class="hr1">
-			<li> 장소 : 부산시민회관</li>
-			<li> 분야 : 전시회</li>
-			<li> 날짜 : 2019.02.15 ~ 2019.04.30</li>
-		</ul>
-		
-		<ul>
-			<li><img src="image/image07.jpg"></li>
-			<li> <h4><span> 스타일은 영원하다. </span></h2></li>
-			<hr class="hr1">
-			<li> 장소 : 부산시민회관</li>
-			<li> 분야 : 전시회</li>
-			<li> 날짜 : 2019.02.15 ~ 2019.04.30</li>
+			<li> <h2><span><%= data.getExhibition_subject() %></span></h2></li>
+			<hr class="hr1" />
+			<li> 장소 : <%= data.getExhibition_address()%></li>
+			<li> 날짜 : <%= data.getExhibition_open()%> ~ <%= data.getExhibition_close()%></li>
 		</ul>
 	</div>
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
