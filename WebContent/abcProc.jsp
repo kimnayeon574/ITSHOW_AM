@@ -145,7 +145,8 @@
    .box1 ul li img{width:230px; height:300px;}
    
    .hr1{width:230px; background-color: inline;}
-   
+   .exhi{font-size : 14px;}
+   .exhibottom{font-size : 12px;}
    
 </style>
 </head>
@@ -192,20 +193,23 @@
             </li>
         </ul>
     </div>
-    <%
-    	 for(int i=0; i<list.size(); i++) {
-    		data = list.get(i);
-    	} 
-    %>
+    
 	<br><br><hr id="titleHr"><br><br>
 	<div class="box1">
+	<%
+    	 for(int i=0; i<list.size(); i++) {
+    		data = list.get(i);
+    	 
+    %>
 		<ul>
 			<li><img src="image/image07.jpg"></li>
-			<li> <h2><span><%= data.getExhibition_subject() %></span></h2></li>
+			<li> <h2><span class="exhi"><%= data.getExhibition_subject() %></span></h2></li>
 			<hr class="hr1" />
-			<li> 장소 : <%= data.getExhibition_address()%></li>
-			<li> 날짜 : <%= data.getExhibition_open()%> ~ <%= data.getExhibition_close()%></li>
+			<li class="exhibottom"> 장소 : <%= data.getExhibition_address()%></li>
+			<li class="exhibottom"> 시간 : <%= data.getExhibition_open()%> ~ <%= data.getExhibition_close()%></li>
+			<li class="exhibottom"> 날짜 : <%= data.getExhibition_date()%></li>
 		</ul>
+	<% } %>	
 	</div>
 
 
