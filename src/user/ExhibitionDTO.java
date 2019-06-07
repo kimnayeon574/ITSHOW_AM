@@ -2,96 +2,141 @@ package user;
 
 import java.sql.Blob;
 import java.sql.Date;
+import java.sql.Time;
+import java.sql.Timestamp;
 
 public class ExhibitionDTO {
-	private int exhibition_key;
-	private String exhibition_address;
-	private int exhibition_price_children;
-	private int exhibition_price_student;
-	private int exhibition_price_stndard;
-	private int exhibition_price_army;
-	private int exhibition_price_aged;
-	private String exhibition_open;
-	private String exhibition_close;
-	private String exhibition_subject;
-	private Blob exhibition_img;
-	private Date exhibition_date;
+	private int num;
+	private String division;
+	private String title;
+	private String address;
+	private String field;
+	private String official;
+	private String photo;
+	private Date start_date;
+	private Date end_date;
+	private Time open_time;
+	private Time close_time;
+	private String holiday;
+	private int standard;
+	private int student;
+	private int children;
+	private int soldier;
+	private int old;
+	private Timestamp upload_date;
 	
 	
-	public Blob getExhibition_img() {
-		return exhibition_img;
+	public int getNum() {
+		return num;
 	}
-	public void setExhibition_img(Blob exhibition_img) {
-		this.exhibition_img = exhibition_img;
+	public void setNum(int num) {
+		this.num = num;
 	}
-	public int getExhibition_key() {
-		return exhibition_key;
+	public String getDivision() {
+		return division;
 	}
-	public void setExhibition_key(int exhibition_key) {
-		this.exhibition_key = exhibition_key;
+	public void setDivision(String division) {
+		this.division = division;
 	}
-	public String getExhibition_address() {
-		return exhibition_address;
+	public String getTitle() {
+		return title;
 	}
-	public void setExhibition_address(String exhibition_address) {
-		this.exhibition_address = exhibition_address;
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	public int getExhibition_price_children() {
-		return exhibition_price_children;
+	public String getAddress() {
+		return address;
 	}
-	public void setExhibition_price_children(int exhibition_price_children) {
-		this.exhibition_price_children = exhibition_price_children;
+	public void setAddress(String address) {
+		this.address = address;
 	}
-	public int getExhibition_price_student() {
-		return exhibition_price_student;
+	public String getField() {
+		return field;
 	}
-	public void setExhibition_price_student(int exhibition_price_student) {
-		this.exhibition_price_student = exhibition_price_student;
+	public void setField(String field) {
+		this.field = field;
 	}
-	public int getExhibition_price_stndard() {
-		return exhibition_price_stndard;
+	public String getOfficial() {
+		return official;
 	}
-	public void setExhibition_price_stndard(int exhibition_price_stndard) {
-		this.exhibition_price_stndard = exhibition_price_stndard;
+	public void setOfficial(String official) {
+		this.official = official;
 	}
-	public int getExhibition_price_army() {
-		return exhibition_price_army;
+	public String getPhoto() {
+		return photo;
 	}
-	public void setExhibition_price_army(int exhibition_price_army) {
-		this.exhibition_price_army = exhibition_price_army;
+	public void setPhoto(String photo) {
+		this.photo = photo;
 	}
-	public int getExhibition_price_aged() {
-		return exhibition_price_aged;
+	public Date getStart_date() {
+		return start_date;
 	}
-	public void setExhibition_price_aged(int exhibition_price_aged) {
-		this.exhibition_price_aged = exhibition_price_aged;
+	public void setStart_date(Date start_date) {
+		this.start_date = start_date;
 	}
-	public String getExhibition_open() {
-		return exhibition_open;
+	public Date getEnd_date() {
+		return end_date;
 	}
-	public void setExhibition_open(String exhibition_open) {
-		this.exhibition_open = exhibition_open;
+	public void setEnd_date(Date end_date) {
+		this.end_date = end_date;
 	}
-	public String getExhibition_close() {
-		return exhibition_close;
+	public Time getOpen_time() {
+		return open_time;
 	}
-	public void setExhibition_close(String exhibition_close) {
-		this.exhibition_close = exhibition_close;
+	public void setOpen_time(Time open_time) {
+		this.open_time = open_time;
 	}
-	public String getExhibition_subject() {
-		return exhibition_subject;
+	public Time getClose_time() {
+		return close_time;
 	}
-	public void setExhibition_subject(String exhibition_subject) {
-		this.exhibition_subject = exhibition_subject;
+	public void setClose_time(Time close_time) {
+		this.close_time = close_time;
 	}
-	public Date getExhibition_date() {
-		return exhibition_date;
+	public String getHoliday() {
+		return holiday;
 	}
-	public void setExhibition_date(Date exhibition_date) {
-		this.exhibition_date = exhibition_date;
+	public void setHoliday(String holiday) {
+		this.holiday = holiday;
 	}
-
-
+	public int getStandard() {
+		return standard;
+	}
+	public void setStandard(int standard) {
+		this.standard = standard;
+	}
+	public int getStudent() {
+		return student;
+	}
+	public void setStudent(int student) {
+		this.student = student;
+	}
+	public int getChildren() {
+		return children;
+	}
+	public void setChildren(int children) {
+		this.children = children;
+	}
+	public int getSoldier() {
+		return soldier;
+	}
+	public void setSoldier(int soldier) {
+		this.soldier = soldier;
+	}
+	public int getOld() {
+		return old;
+	}
+	public void setOld(int old) {
+		this.old = old;
+	}
+	public Timestamp getUpload_date() {
+		return upload_date;
+	}
+	public void setUpload_date(Timestamp upload_date) {
+		this.upload_date = upload_date;
+	}
+	
+	
+	
 
 
 }

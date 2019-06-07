@@ -19,7 +19,6 @@ public class ExhibitionDAO {
 		return instance;
 	}
 	
-	
 	public List<ExhibitionDTO> getList() {
 		String driver = "com.mysql.jdbc.Driver";
 		String url="jdbc:mysql://10.96.123.45:3307/am_db?characterEncoding=UTF-8&serverTimezone=UTC";
@@ -31,7 +30,7 @@ public class ExhibitionDAO {
 		try {
 			Class.forName(driver);
 			conn = DriverManager.getConnection(url, "am", "1234");
-			ppst = (PreparedStatement) conn.prepareStatement("select * from exhibition");
+			ppst = (PreparedStatement) conn.prepareStatement("select * from culture");
 			rs = ppst.executeQuery();
 			
 			if(rs.next()) {
@@ -39,18 +38,24 @@ public class ExhibitionDAO {
 				do {
 					ExhibitionDTO data = new ExhibitionDTO();
 					
-					data.setExhibition_key(rs.getInt("exhibition_key"));
-					data.setExhibition_address(rs.getString("exhibition_address"));
-					data.setExhibition_price_children(rs.getInt("Exhibition_price_children"));
-					data.setExhibition_price_student(rs.getInt("exhibition_price_student"));
-					data.setExhibition_price_stndard(rs.getInt("exhibition_price_stndard"));
-					data.setExhibition_price_army(rs.getInt("exhibition_price_army"));
-					data.setExhibition_price_aged(rs.getInt("exhibition_price_aged"));
-					data.setExhibition_open(rs.getString("exhibition_open"));
-					data.setExhibition_close(rs.getString("exhibition_close"));
-					data.setExhibition_subject(rs.getString("exhibition_subject"));
-					data.setExhibition_img(rs.getBlob("exhibition_img"));
-					data.setExhibition_date(rs.getDate("exhibition_date"));
+					data.setNum(rs.getInt("num"));
+					data.setDivision(rs.getString("division"));
+					data.setTitle(rs.getString("title"));
+					data.setAddress(rs.getString("address"));
+					data.setField(rs.getString("field"));
+					data.setOfficial(rs.getString("official"));
+					data.setPhoto(rs.getString("photo"));
+					data.setStart_date(rs.getDate("start_date"));
+					data.setEnd_date(rs.getDate("end_date"));
+					data.setOpen_time(rs.getTime("open_time"));
+					data.setClose_time(rs.getTime("close_time"));
+					data.setHoliday(rs.getString("holiday"));
+					data.setStandard(rs.getInt("standard"));
+					data.setStudent(rs.getInt("student"));
+					data.setChildren(rs.getInt("children"));
+					data.setSoldier(rs.getInt("soldier"));
+					data.setOld(rs.getInt("old"));
+					data.setUpload_date(rs.getTimestamp("upload_date"));
 					
 					list.add(data);
 					
