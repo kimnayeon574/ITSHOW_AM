@@ -152,9 +152,6 @@
 </head>
 <body>
 
-<div id="header">
-	<jsp:include page="header.jsp" />
-</div>
 	<div class="menubar">
         <ul>
             <li>
@@ -202,12 +199,12 @@
     	 
     %>
 		<ul>
-			<li><img src="image/image07.jpg"></li>
-			<li> <h2><span class="exhi"><%= data.getExhibition_subject() %></span></h2></li>
+			<li><a href="museum.jsp"><img src="image/image07.jpg"></a></li>
+			<li> <h2><span class="exhi"><%= data.getTitle() %></span></h2></li>
 			<hr class="hr1" />
-			<li class="exhibottom"> 장소 : <%= data.getExhibition_address()%></li>
-			<li class="exhibottom"> 시간 : <%= data.getExhibition_open()%> ~ <%= data.getExhibition_close()%></li>
-			<li class="exhibottom"> 날짜 : <%= data.getExhibition_date()%></li>
+			<li class="exhibottom"> 장소 : <%= data.getAddress()%></li>
+			<li class="exhibottom"> 시간 : <%= data.getOpen_time()%> ~ <%= data.getClose_time()%></li>
+			<li class="exhibottom"> 날짜 : <%= data.getStart_date()%> ~ <%= data.getEnd_date()%></li>
 		</ul>
 	<% } %>	
 	</div>
